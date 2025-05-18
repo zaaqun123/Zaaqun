@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Portofolio</title>
+  <link rel="icon" type="image/png" href="../asset/Logo.png">
+  <link href="style.css" rel="stylesheet" type="text/css">
+
+  <style>
+    /* Tooltip floating style */
+    .icon ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .icon ul li {
+      position: relative;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .icon ul li img {
+      width: 44px;
+      height: auto;
+      cursor: pointer;
+    }
+
+    .tooltip {
+      visibility: hidden;
+      opacity: 0;
+      background-color: rgba(51, 51, 51, 0.9);
+      color: #fff;
+      text-align: center;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 13px;
+      position: absolute;
+      left: 60px;
+      top: 50%;
+      transform: translateY(-50%);
+      white-space: nowrap;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      z-index: 1;
+    }
+
+    .icon ul li:hover .tooltip {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .Navigation_bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+    }
+
+    .icon {
+      position: fixed;
+      top: 150px;
+      left: 20px;
+      z-index: 10;
+    }
+
+    .cover {
+      display: block;
+      margin: 80px auto;
+    }
+
+    .atap, .atap2 {
+      display: block;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Sidebar navigasi -->
+  <div>
+    <img class="Navigation_bar" src="../asset/nabar.png" width="201" height="1115" alt=""/>
+  </div>
+
+  <!-- Menu ikon dengan tooltip -->
+  <div class="icon">
+    <ul>
+      <li id="home">
+        <a href="Home.html">
+          <img src="../asset/home.png" alt="Home">
+          <span class="tooltip">Home</span>
+        </a>
+      </li>
+      <li id="book">
+        <a href="Book.html">
+          <img src="../asset/book-open.png" alt="Galery">
+          <span class="tooltip">Galery</span>
+        </a>
+      </li>
+      <li id="credit">
+        <a href="credit.html">
+          <img src="../asset/alert-circle.png" alt="Credit">
+          <span class="tooltip">Credit</span>
+        </a>
+      </li>
+      <li id="contak">
+        <a href="contak.html">
+          <img src="../asset/mail.png" alt="Contact">
+          <span class="tooltip">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Cover utama -->
+  <div>
+    <a href="home2.html">
+      <img class="cover" src="../asset/Cover.png" width="661" height="916" alt="Cover">
+    </a>
+  </div>
+
+  <!-- Atap dekoratif -->
+  <div>
+    <img class="atap" src="../asset/Atap.png" width="1928" height="210" alt=""/>
+    <img class="atap2" src="../asset/Atap.png" width="1928" height="210" alt=""/> 
+  </div>
+</body>
+</html>
